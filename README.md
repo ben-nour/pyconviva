@@ -1,4 +1,4 @@
-# PyConviva
+<h1 align='center'>PyConviva</h1>
 
 <p align="center">
      <a href="https://github.com/ben-nour/pyconviva/actions/workflows/tests.yml"><img src="https://github.com/ben-nour/pyconviva/actions/workflows/tests.yml/badge.svg"                 alt="Testing"></a>

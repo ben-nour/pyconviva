@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "pyconviva"
 description = "A Python wrapper for Conviva's Metrics V3 API"
 authors = [{ name = "Ben Nour", email = "hello@ben-nour.com" }]
-project_version = "0.1.0"
+version = "0.1.0"
 dependencies = ["requests"]
 classifiers = [
     "License :: OSI Approved :: MIT License",

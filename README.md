@@ -93,7 +93,7 @@ With `get_real_time_data()` simply specify the number of minutes ago you want to
 
 ```py
 # Get data that is 5 minutes old or fresher.
-api.get_real_time_data(5)
+api.get_real_time_data("attempts", time_range=5)
 ```
 
 With `get_historical_data()` there are numerous ways (start/end_date, start/end_epoch) in which to specify the time range.
@@ -116,12 +116,14 @@ To sort the data returned you can pass the name of the metric you want to sort b
 Default order of sorting is descending but if you want to sort in ascending order you can
 also pass this as the second argument of a list.
 
+Note that you need to group by a dimension in order to sort.
+
 ```py
 # Ordering by bitrate in descending order.
-api.get_historical_data(["attempts", "bitrate"], sort_by="bitrate")
+api.get_historical_data(["attempts", "bitrate"], group_by="isp", sort_by="bitrate")
 
 # Ordering by bitrate in ascending order.
-api.get_historical_data(["attempts", "bitrate"], sort_by=["bitrate", "asc"])
+api.get_historical_data(["attempts", "bitrate"], group_by="isp", sort_by=["bitrate", "asc"])
 ```
 
 **Granularity**

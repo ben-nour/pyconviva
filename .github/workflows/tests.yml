@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ["3.9", "3.10", "3.11", "3.12"]
+        python-version: ["3.10", "3.11", "3.12"]
     steps:
       - uses: actions/checkout@v4
       - name: Set up Python ${{ matrix.python-version }}
@@ -28,4 +28,4 @@ jobs:
         #uses: codecov/codecov-action@v4.0.1
         #with:
           #token: ${{ secrets.CODECOV_TOKEN }}
-          #slug: ben-n93/pyconviva
+          #slug: ben-nour/pyconviva

@@ -5,6 +5,10 @@ PyConviva is a Python wrapper for Conviva's [Metrics V3 API](https://developer.c
 For example, to get attempts metric data for the past 5 days, grouped by ISP:
 
 ```py
+import os
+
+from pyconviva import ConvivaAPI
+
 api = ConvivaAPI(os.environ["client_key"], os.environ["client_id"])
 data = api.get_historical_data("attempts", group_by="isp", time_range=5)
 ```
@@ -49,7 +53,7 @@ all examples use `get_historical_data()` but are applicable to `get_real_time_da
 
 Simply pass the name of the dimension you want to group by.
 
-If you want to group bya custom tag you need to pass a dictionary,
+If you want to group by a custom tag you need to pass a dictionary,
 the key of which is `"custom-tag"` and the value of which is the name of your custom tag:
 
 ```py
@@ -97,10 +101,10 @@ With `get_historical_data()` there are numerous ways (start/end_date, start/end_
 See the [official Metrics documentation](https://developer.conviva.com/docs/metrics-api-v3/3434cc866b1a9-options-to-select-a-time-range) for detail.
 
 ```py
-# Getting Ended Plays metric per country for the last 5 days:
+# Getting Ended Plays metric data per country for the last 5 days:
 api.get_historical_data("attempts", time_range=5)
 
-# Getting bitrate and attempts metric data for January 1st 2025 to January 5th 2025
+# Getting attempts metric data for January 1st 2025 to January 5th 2025
 api.get_historical_data("attempts", time_range={"start_date":"2025-01-01T12:00:00.000Z",
                                                 "end_date":"2025-01-06T12:59:59.000Z"})
 ```

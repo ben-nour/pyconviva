@@ -1,5 +1,11 @@
 # PyConviva
 
+<p align="center">
+     <a href="https://github.com/ben-nour/pyconviva/actions/workflows/tests.yml"><img src="https://github.com/ben-nour/pyconviva/actions/workflows/tests.yml/badge.svg"                 alt="Testing"></a>
+     <a href="https://github.com/ben-nour/pyconviva/blob/main/LICENSE"><img src="https://img.shields.io/pypi/l/pyconviva" alt="License"></a>
+    <a href="https://pypi.org/project/pyconviva/"><img src="https://img.shields.io/pypi/pyversions/pyconviva" alt="versions"></a>
+</p>
+
 PyConviva is a Python wrapper for Conviva's [Metrics V3 API](https://developer.conviva.com/docs/metrics-api-v3), which provides programmatic access to historical and real-time metrics data.
 
 For example, to get attempts metric data for the past 5 days, grouped by ISP:

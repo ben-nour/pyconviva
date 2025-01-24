@@ -3,6 +3,7 @@
 <p align="center">
      <a href="https://github.com/ben-nour/pyconviva/actions/workflows/tests.yml"><img src="https://github.com/ben-nour/pyconviva/actions/workflows/tests.yml/badge.svg"                 alt="Testing"></a>
      <a href="https://github.com/ben-nour/pyconviva/blob/main/LICENSE"><img src="https://img.shields.io/pypi/l/pyconviva" alt="License"></a>
+     <a href="https://codecov.io/gh/ben-nour/pyconviva" ><img src="https://codecov.io/gh/ben-nour/pyconviva/graph/badge.svg"/></a>
     <a href="https://pypi.org/project/pyconviva/"><img src="https://img.shields.io/pypi/pyversions/pyconviva" alt="versions"></a>
 </p>
 
